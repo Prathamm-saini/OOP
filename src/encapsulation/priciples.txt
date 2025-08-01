@@ -1,0 +1,19 @@
+ENCAPSULATION
+Wrapping up the implementation of the data members and the methods  in a class
+hides the code and data in a single unit to make it safe from access of outside world
+
+ABSTRACTION
+hiding unnecessary details and only showing necessary details
+
+ex -> you have a key, you open the car turn on and move.
+for driving a car you do not need to know how car is internally made and how they work together
+
+ENCAPSULATION (engineer's work -> solves implementation stuff) VS ABSTRACTION (designer work) vauge example
+
+how things should be and what parts must be visible to the user, or they need to know is selected by designers
+while how we will achieve this is done via encapsulation
+
+
+
+we achieve abstraction via ABSTRACT METHODS -> gaining information
+encapsulation is done via getters and setter and do data hiding -> hides complexity of system

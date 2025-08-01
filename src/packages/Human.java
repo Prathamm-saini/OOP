@@ -13,7 +13,7 @@ if we declare something as static we can access them without creating objects of
 we can create both methods and variables as static
 
 why main is declared static ?
-because we do not wish to create a object of main and access it via that as it will be cumbersome
+because we do not wish to create object of main and access it via that as it will be cumbersome
 
 inside a static method we cannot use something which is non-static
 ex- in main func which is static we cannot use function which are not static
