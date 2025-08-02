@@ -1,0 +1,14 @@
+packages are just folders to categorize our classes or divide our code
+
+types
+1. inbuilt packages
+2. user defined packages
+
+inbuilt packages
+1.lang -> java language specific stuff (gets automatically imported)
+2. io -> input output package. buffer reader buffer writer stuff
+3. util -> utility framework -> includes some collection framework stuff for data structures like LL,STACK, QUEUES, HASHSET,HASHMPAS
+4. applet -> used to create applets . used in earlier days of java dev using jsp's servlets
+5. awt -> gui stuff swing etc.
+6. net -> for networking
+
