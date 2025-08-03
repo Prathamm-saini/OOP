@@ -1,9 +1,6 @@
 package AbstractClass;
-/// Problem statement -> can you solve Multiple Inheritance in Java?
-///      class A (having func())                       class B (having func())
-///                 Class c extending both A and B
-/// This is called multiple inheritance.Here java will get confused which func() to call
-///
+
+/// let's say we have a parent class which tells us what to do but not how to do it - abstract
 /// Real life scenario of Abstract classes
 ///                            Career (takes name) Parent class
 ///     1st child
