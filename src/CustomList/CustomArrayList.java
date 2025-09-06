@@ -1,17 +1,17 @@
-package CustomArrayList;
+package CustomList;
 
-public class customArrayList {
+public class CustomArrayList {
     private int capacity = 10;
     private int[] arr;
     private int size = 0;
 
     // Default constructor
-    public customArrayList() {
+    public CustomArrayList() {
         arr = new int[capacity];
     }
 
     // Constructor with custom capacity
-    public customArrayList(int capacity) {
+    public CustomArrayList(int capacity) {
         this.capacity = capacity;
         arr = new int[capacity];
     }
