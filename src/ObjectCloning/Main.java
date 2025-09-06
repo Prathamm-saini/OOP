@@ -1,5 +1,7 @@
 package ObjectCloning;
 
+import java.util.Arrays;
+
 public class Main {
     // we can use throw in a function too not only on classes
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -13,6 +15,13 @@ public class Main {
         Human punk = (Human)Pratham.clone();
 
 
+        // Shallow copying
+        /// means it will create a copy of my original object such that new primitives but no objects it will reference to original object only
+        /// but create new primitives
+        System.out.println(Arrays.toString(Pratham.arr));
+        System.out.println(Arrays.toString(punk.arr));
+
+        // Deep copying -> different objects completely
 
 
     }
