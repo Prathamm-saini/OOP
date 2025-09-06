@@ -1,6 +1,43 @@
 package CustomList;
 
 public class CustomGenericArrayList<T> {
+    /*
+    JAVA WILDCARDS
+     In Generics, sometimes we don’t know the exact type parameter at compile time.
+    Wildcards (?) let us write flexible code while still keeping type-safety.
+
+    1) Unbounded Wildcard ( ? )
+       - Means "any type".
+       - Example: List<?> list = new ArrayList<String>();
+         (list can hold a list of ANY type, but we cannot add new elements except null)
+
+    2) Upper Bounded Wildcard ( ? extends Class )
+       - Restricts type to be a subclass (or itself).
+       - Example: List<? extends Number>
+         → accepts List<Integer>, List<Double>, etc.
+       - Useful for "read-only" scenarios, when you want to accept
+         data but not insert anything new.
+
+    3) Lower Bounded Wildcard ( ? super Class )
+       - Restricts type to be a superclass (or itself).
+       - Example: List<? super Integer>
+         → accepts List<Integer>, List<Number>, List<Object>.
+       - Useful for "write" scenarios (inserting into the list).
+
+    RULE OF THUMB (PECS rule):
+    - Producer Extends → use <? extends T> when the collection produces data
+    When you say List<? extends Number>, the list can hold Integers, Doubles, Floats… (anything that is a subclass of Number).
+
+BUT: You cannot safely add elements (except null), because the compiler doesn’t know the exact subtype.
+
+    - Consumer Super   → use <? super T> when the collection consumes data
+    When you say List<? super Integer>, the list can hold Integer and anything that’s a superclass (Number, Object).
+
+You can add Integers, because every superclass can accept an Integer safely.
+
+BUT: You cannot read with exact type (only Object is guaranteed).
+    - If you only need to pass it around → use <?>
+     */
     private int capacity = 10;
     private Object[] arr;
     private int size = 0;
